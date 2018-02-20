@@ -5,11 +5,7 @@ PHRASE=${ROOT}/data/wmt14_en_de.phrase
 
 generate_wmt() {
     # 69min real
-    cd $ROOT
-    mkdir -p data
-    rm -f data/prepare-wmt14en2de.sh
-    ln -s scripts/prepare-wmt14en2de.sh data/prepare-wmt14en2de.sh
-    cd data
+    cd $ROOT/data
     bash prepare-wmt14en2de.sh
 }
 
